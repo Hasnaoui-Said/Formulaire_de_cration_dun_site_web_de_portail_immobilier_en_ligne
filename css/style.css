@@ -1,0 +1,249 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    font-family: "Lucida Sans", sans-serif;
+}
+header{
+    background-color: #577BC1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+ header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+header ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+.breadcrumbs nav ul{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.home{
+    color: #6E3CBC;
+    font-size: 20px;
+}
+.breadcrumbs nav ul li a{
+    text-decoration: none;
+}
+.breadcrumbs nav ul li{
+    list-style: none;
+}
+
+.breadcrumbs ul li:not(:last-of-type)::after{
+    content: " /";
+    padding: 0 15px;
+    color: #6E3CBC;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.container{
+    margin: 2px 0 40px 0;
+    display: flex;
+    gap: 6.67%;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.item__1{
+    background-color: #6E3CBC;
+    width: 33.33%;
+}
+.mon__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mon__logo p{
+    text-align: center;
+    color: #fff;
+    margin:25px;
+}
+.item__2{
+    background-color: #EDE7F6;
+    width: 60%;
+}
+.item__2 .form_footer{
+    height: 100px;
+    width: 100%;
+    background-color:#6E3CBC;
+}
+
+.item__2 form{
+    background-color: #FFF8F8;
+    width: 75%;
+    padding: 5%;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    border-left: 5px solid #B388FF;
+    border-top: 10px solid#B388FF;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 25px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.input label{
+    margin: 5px 0px;
+}
+.input__border{
+    border: none;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+
+.input_prix{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.input_prix div{
+    width: 29%;
+}
+.input_prix div input{
+    width: 100%;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn input{
+    padding: 6px 50px;
+    border: solid 3px #6E3CBC;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #6E3CBC;
+    font-size: 15px;
+}
+.btn input:hover{
+    background-color: #6E3CBC;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #577BC1;
+    margin: 0;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:720px){
+    .logo{
+        width: 25%;
+        margin-left: 1%;
+    }
+    nav ul{
+        margin-right: 5%;
+    }
+}
+@media screen and (max-width:600px){
+    .logo{
+        width: 12.5%;
+    }
+    nav ul{
+        margin-right: 1%;
+    }
+}
+@media screen and (max-width:550px){
+    .logo{
+        width: 12.5%;
+    }
+    header nav ul{
+        gap: 3.2%;
+    }
+}
+@media screen and (max-width:500px){
+    header nav{
+        display: none;
+    }
+    
+    .toggleable:hover{
+        cursor: pointer;
+    }
+    .toggleable{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
+        margin-right: 5%;
+    }
+
+    .toggleable .togg{
+        width: 40px;
+        height: 4.5px;
+        border-radius: 1.5px;
+        background-color: #fff;
+    }
+    .logo{
+        width: 45%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .item{
+        width: 100%;
+    }
+    .mon__logo svg{
+        display: none;
+    }
+    .form_footer{
+        display: none;
+    }
+    .item__2 form {
+        margin-top: -10px;
+        width: 85%;
+    }
+}
+
+
+

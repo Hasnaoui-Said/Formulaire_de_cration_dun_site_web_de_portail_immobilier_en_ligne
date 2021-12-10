@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 102.031 73.611">
+                <path id="Tracé_4" data-name="Tracé 4" d="M191.281,297.144,241.7,230.357l47.584,66.787" transform="translate(-189.286 -226.13)" fill="none" stroke="#fff" stroke-width="5"/>
+                <rect id="Rectangle_17" data-name="Rectangle 17" width="10.02" height="11.639" transform="translate(53.509 25.981)" fill="#fff"/>
+                <rect id="Rectangle_17-2" data-name="Rectangle 17" width="10.02" height="11.639" transform="translate(41.509 25.981)" fill="#fff"/>
+                <rect id="Rectangle_17-3" data-name="Rectangle 17" width="10.02" height="11.639" transform="translate(53.509 38.981)" fill="#fff"/>
+                <rect id="Rectangle_17-4" data-name="Rectangle 17" width="10.02" height="11.639" transform="translate(41.509 38.981)" fill="#fff"/>
+                <text id="House" transform="translate(24.495 68.611)" fill="#fff" font-size="19" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">House</tspan></text>
+            </svg>                  
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Simple post</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Connexion</a></li>
+            </ul>
+        </nav>
+        <div class="toggleable">
+            <div class="togg"></div>
+            <div class="togg"></div>
+            <div class="togg"></div>
+        </div>
+    </header>
+    <div class="breadcrumbs">
+        <nav>
+            <ul>
+                <li><a href="#" class="home">Home</a></li>
+                <li><a href="#">Form</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div class="container">
+            <div class="item item__1">
+                <div class="mon__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="60" viewBox="0 0 102.031 73.611">
+                        <path id="Tracé_4" data-name="Tracé 4" d="M191.281,297.144,241.7,230.357l47.584,66.787" transform="translate(-189.286 -226.13)" fill="none" stroke="#fff" stroke-width="5"/>
+                        <rect id="Rectangle_17" data-name="Rectangle 17" width="10.02" height="11.639" transform="translate(53.509 25.981)" fill="#fff"/>
+                        <rect id="Rectangle_17-2" data-name="Rectangle 17" width="10.02" height="11.639" transform="translate(41.509 25.981)" fill="#fff"/>
+                        <rect id="Rectangle_17-3" data-name="Rectangle 17" width="10.02" height="11.639" transform="translate(53.509 38.981)" fill="#fff"/>
+                        <rect id="Rectangle_17-4" data-name="Rectangle 17" width="10.02" height="11.639" transform="translate(41.509 38.981)" fill="#fff"/>
+                        <text id="House" transform="translate(24.495 68.611)" fill="#fff" font-size="19" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">House</tspan></text>
+                    </svg>
+                    <p>
+                        Biens immobiliers
+                        trouvez l'appartement,
+                        ou la maison de vos rêves, 
+                        à vendre ou à louer!
+                    </p>
+                </div>
+            </div>
+            <div class="item item__2">
+                <div class="form_footer"></div>
+                <form>
+                    <div class="item_2_border">
+                        <h3>Tout l'immobilier au Maroc en vente</h3>
+                        <div class="input">
+                            <label>rayon de recherche :</label>
+                            <select class="input__border">
+                                <option selected>Tous</option>
+                                <option>Casa</option>
+                                <option>Rabat</option>
+                                <option>Marakech</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <label>Type de propréité :</label>
+                            <select class="input__border">
+                                <option selected>Tous</option>
+                                <option>Villa</option>
+                                <option>Appartement</option>
+                                <option>Studio</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <label>Nombres de chambres:</label>
+                            <input class="input__border" type="number" min="1" max="7" value="2">
+                        </div>
+                        <div class="input">
+                            <label>Fourchette de prix:</label>
+                            <div class="input_prix">
+                                <div>
+                                    <label>Min:</label>
+                                    <input class="input__border" type="number">
+                                </div>
+                                <div>
+                                    <label>Max:</label>
+                                    <input  class="input__border" type="number">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <input type="submit" value="Chercher">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </main>
+
+    <footer>
+        <div>
+            <p>
+                © 2021 smub_super SL.Tous droits réservés. Le 1er site immobilier du Maroc
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
